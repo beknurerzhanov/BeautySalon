@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service types</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" type="text/css" href="css\Servicetypes.css">
+    <link rel="icon" href="icon\elegant.ico">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+<body>
+    <header class="header">
+        <div class="container">
+           <div class="header-main">
+              <div class="logo">
+                 <a href="Main2.html">Beine Salon</a>
+                 <img src="img\80-802684_pix-beauty-salon-beauty-salon-icon-png-transparent.png" width="50px" height="50px">
+              </div>
+              <div class="open-nav-menu">
+                 <span></span>
+              </div>
+              <div class="menu-overlay">
+              </div>
+              <!-- navigation menu start -->
+              <nav class="nav-menu">
+                <div class="close-nav-menu">
+                   <img src="img\493-4934419_pink-close-icon-clipart-png-download-pink-icon.png" alt="close">
+                </div>
+                <ul class="menu">
+                   <li class="menu-item">
+                      <a href="Main2.html">Home</a>
+                   </li>
+                   <li class="menu-item menu-item-has-children">
+                      <a href="Aboutus.html">About us<i class="plus"></i></a>
+                      <ul class="sub-menu">
+                        <li class="menu-item"><a href="Group works.html">Group works</a></li>
+                        <li class="menu-item"><a href="2048.html">Game for fun</a></li>
+                    </ul>
+                   </li>
+                   <li class="menu-item menu-item-has-children">
+                    <a href="Services.html" data-toggle="sub-menu">Services<i class="plus"></i></a>
+                    <ul class="sub-menu">
+                        <li class="menu-item"><a href="">Service types</a></li>
+
+                    </ul>
+                 </li>
+                   <li class="menu-item">
+                      <a href="Gallery.html">Gallery</a>
+                      
+                   </li>
+                   <li class="menu-item">
+                      <a href="#">Contact</a>
+                   </li>
+                 
+                </ul>
+              </nav>
+             
+           </div>
+           
+        </div>
+     </header>
+     <div class="container">
+      <div class="container-fluid-search">
+        <div class="search-box">
+          <form action="" onsubmit="return false">
+            <input style="border: 2px solid #6a0c73;" type="text" id="search" placeholder="Search Services" />
+          </form>
+        </div>
+        <div class="bin">
+          <a onclick="openModal()" style="color: #6a0c73;"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      </div>
+    </header>
+    <main>
+        <div class="main-container">
+          <section class="container" id="store-products">
+           
+            <div class="store-product makeup">
+              <img src="img\photo1684923996 (2).jpeg" alt="" style="object-fit: cover; border-radius: 10px;"/>
+              <div class="product-details">
+                <h2>Bridal party makeup</h2>
+                <p><span>$9.99</span> $8.99</p>
+                <a style="cursor: pointer;" onClick="buttonclick(this.parentNode.querySelector('h2').textContent)">Book service</a>
+              </div>
+            </div>
+           
+            <div class="store-product makeup">
+              <img src="img\makeup1.jpg" alt="" style="object-fit: cover; border-radius: 10px;"/>
+              <div class="product-details">
+                <h2>Bachelorette party makeup</h2>
+                <p><span>$39.99</span> $29.99</p>
+                <a style="cursor: pointer;" onClick="buttonclick(this.parentNode.querySelector('h2').textContent)">Book service</a>
+              </div>
+            </div>
+            
+            <div class="store-product nail">
+              <img src="img\nail1.jpg" alt="" style="object-fit: cover; border-radius: 10px;"/>
+              <div class="product-details">
+                <h2>Manicure</h2>
+                <p><span>$39.99</span> $29.99</p>
+                <a style="cursor: pointer;" onClick="buttonclick(this.parentNode.querySelector('h2').textContent)">Book service</a>
+              </div>
+            </div>
+           
+            <div class="store-product nail">
+              <img src="img\photo1684923996 (3).jpeg" alt="" style="object-fit: cover; border-radius: 10px;"/>
+              <div class="product-details">
+                <h2>Pedicure</h2>
+                <p><span>$39.99</span> $29.99</p>
+                <a style="cursor: pointer;" onClick="buttonclick(this.parentNode.querySelector('h2').textContent)">Book service</a>
+              </div>
+            </div>
+           
+            <div class="store-product spa">
+              <img src="img\photo1684923996 (4).jpeg" alt="" style="object-fit: cover; border-radius: 10px;"/>
+              <div class="product-details">
+                <h2>Aromatherapy massage</h2>
+                <p><span>$39.99</span> $29.99</p>
+                <a style="cursor: pointer;" onClick="buttonclick(this.parentNode.querySelector('h2').textContent)">Book service</a>
+              </div>
+            </div>
+            
+            <div class="store-product spa">
+              <img src="img\photo1684923996 (5).jpeg" alt="" style="object-fit: cover; border-radius: 10px;"/>
+              <div class="product-details">
+                <h2>Herbal body wrap</h2>
+                <p><span>$39.99</span> $29.99</p>
+                <a style="cursor: pointer;" onClick="buttonclick(this.parentNode.querySelector('h2').textContent)">Book service</a>
+              </div>
+            </div>
+          
+            <div class="store-product lashes">
+              <img src="img\photo1684923996 (1).jpeg" alt="" style="object-fit: cover; border-radius: 10px;"/>
+              <div class="product-details">
+                <h2>Eyelash extension</h2>
+                <p><span>$39.99</span> $29.99</p>
+                <a style="cursor: pointer;" onClick="buttonclick(this.parentNode.querySelector('h2').textContent)">Book service</a>
+              </div>
+            </div>
+           
+            <div class="store-product lashes">
+              <img src="img\photo1684923996.jpeg" alt="" style="object-fit: cover; border-radius: 10px;"/>
+              <div class="product-details">
+                <h2>Natural set</h2>
+                <p><span>$39.99</span> $29.99</p>
+                <a style="cursor: pointer;" onClick="buttonclick(this.parentNode.querySelector('h2').textContent)">Book service</a>
+              </div>
+            </div>
+           
+            <div class="store-product haircut">
+              <img src="img\mhair1.jpg" alt="" style="object-fit: cover; border-radius: 10px;"/>
+              <div class="product-details">
+                <h2>Natural set</h2>
+                <p><span>$39.99</span> $29.99</p>
+                <a style="cursor: pointer;" onClick="buttonclick(this.parentNode.querySelector('h2').textContent)">Book service</a>
+              </div>
+            </div>
+           
+            <div class="store-product haircut">
+              <img src="img\whair1.jpg" alt="" style="object-fit: cover; border-radius: 10px;"/>
+              <div class="product-details">
+                <h2>Men's barber</h2>
+                <p><span>$39.99</span> $29.99</p>
+                <a style="cursor: pointer;" onClick="buttonclick(this.parentNode.querySelector('h2').textContent)">Book service</a>
+              </div>
+            </div>
+          
+            <div class="store-product wax">
+              <img src="img\photo1684923996 (6).jpeg" alt="" style="object-fit: cover; border-radius: 10px;"/>
+              <div class="product-details">
+                <h2>Soft wax</h2>
+                <p>$5.99</p>
+                <a style="cursor: pointer;" onClick="buttonclick(this.parentNode.querySelector('h2').textContent)">Book service</a>
+              </div>
+            </div>
+            <!-- Single product - Jewelry -->
+            
+          </section>
+          <div class="container no-result">
+            <p>No more products found.</p>
+          </div>
+        </div>
+      </main>
+      <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Beine<span>Salon</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">About</a>
+                |
+                <a href="#">Contact</a>
+                |
+                <a href="#">Blog</a>
+            </p>
+
+            <p class="footer-company-name"><strong></strong></p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Syganak 21</span>
+                    Astana</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+7 708 546 89 71</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="beinesalon@gmail.com">beinesalon@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>Beine salon</strong> is the  best salon in our city, because we care about our clients and make them happy!
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        // Функция для проверки заполнены ли Имя и Номер телефона
+    function validateFields() {
+      var nameInput = document.getElementById('nameInput');
+      var phoneInput = document.getElementById('phoneInput');
+
+      if (nameInput.value === '' || phoneInput.value === '') {
+        nameInput.required = true;
+        phoneInput.required = true;
+      }
+    }
+
+
+        // Функция для добавления товара в корзину
+    function addToCart(item) {
+      var cartItems = document.getElementById('cartItems');
+    
+    // Проверка наличия текста "Your Cart is Empty" перед его удалением
+    if (cartItems.textContent === "Your Cart is Empty") {
+      cartItems.textContent = "";
+    }
+    
+      var newItem = document.createElement('p');
+      newItem.textContent = item;
+      cartItems.appendChild(newItem);
+    }
+
+    // Функция для удаления товара из корзины
+    function dropCart(event) {
+    var cartItems = document.getElementById('cartItems');
+    cartItems.innerHTML = "";
+    cartItems.textContent = "Your Cart is Empty";
+      
+    var nameInput = document.getElementById('nameInput');
+    var phoneInput = document.getElementById('phoneInput');
+    var nameError = document.getElementById('nameError');
+    var phoneError = document.getElementById('phoneError');
+      
+    nameInput.value = "";
+    phoneInput.value = "";
+    nameError.style.display = 'none';
+    phoneError.style.display = 'none';
+    }
+
+    function openModal() {
+      var modalOverlay = document.getElementById('modalOverlay');
+      modalOverlay.style.display = 'flex';
+    }
+
+    function closeModal(event) {
+      if (event.target === event.currentTarget) {
+        var modalOverlay = document.getElementById('modalOverlay');
+        modalOverlay.style.display = 'none';
+      }
+    }
+
+    //Функция для оформления заказа
+    function sendOffer(event) {
+
+      if (cartItems.textContent === "Your Cart is Empty") {
+      // Создание элемента оповещения
+      var alertElement = document.createElement('div');
+      alertElement.classList.add('notification-empty-cart', 'alert', 'alert-primary');
+      alertElement.textContent = 'Your Cart is Empty!';
+      document.body.appendChild(alertElement);
+
+      // Закрытие оповещения через 3 секунды
+      setTimeout(function() {
+        $(alertElement).fadeOut('slow', function() {
+          alertElement.remove();
+        });
+      }, 3000);
+
+     }
+
+     else {
+
+  var nameInput = document.getElementById('nameInput');
+  var phoneInput = document.getElementById('phoneInput');
+  var nameError = document.getElementById('nameError');
+  var phoneError = document.getElementById('phoneError');
+  
+  if (nameInput.value === '') {
+    nameInput.required = true;
+    nameError.style.display = 'block';
+  } else {
+    nameInput.required = false;
+    nameError.style.display = 'none';
+  }
+  
+  if (phoneInput.value === '') {
+    phoneInput.required = true;
+    phoneError.style.display = 'block';
+  } else {
+    phoneInput.required = false;
+    phoneError.style.display = 'none';
+  }
+  
+      if (nameInput.value !== '' && phoneInput.value !== '') {
+      
+                // Создание элемента оповещения
+                var alertElement = document.createElement('div');
+          alertElement.classList.add('notification-cart', 'alert', 'alert-primary');
+          alertElement.textContent = 'Your offer confirmed, We will call to you!';
+          document.body.appendChild(alertElement);
+      
+          // Закрытие оповещения через 5 секунды
+          setTimeout(function() {
+            $(alertElement).fadeOut('slow', function() {
+              alertElement.remove();
+            });
+          }, 5000);
+        
+          var modalOverlay = document.getElementById('modalOverlay');
+          modalOverlay.style.display = 'none';
+        
+          dropCart();
+
+      }
+     }
+    }
+
+      function buttonclick(itemName) {
+
+      audio.play();
+
+      // Добавление товара в корзину
+      addToCart(itemName);
+
+      // Создание элемента оповещения
+      var alertElement = document.createElement('div');
+      alertElement.classList.add('notification', 'alert', 'alert-success');
+      alertElement.textContent = 'Service added to cart!';
+      document.body.appendChild(alertElement);
+
+      // Закрытие оповещения через 3 секунды
+      setTimeout(function() {
+        $(alertElement).fadeOut('slow', function() {
+          alertElement.remove();
+        });
+      }, 3000);
+    }
+
+    </script>
+
+    <script>$(document).ready(function() {
+      $("#modalTrigger").click(function() {
+        $("#myModal").modal("show");
+      });
+    });
+    </script>
+    
+     <script>
+         (() =>{
+ 
+ const openNavMenu = document.querySelector(".open-nav-menu"),
+ closeNavMenu = document.querySelector(".close-nav-menu"),
+ navMenu = document.querySelector(".nav-menu"),
+ menuOverlay = document.querySelector(".menu-overlay"),
+ mediaSize = 991;
+
+ openNavMenu.addEventListener("click", toggleNav);
+ closeNavMenu.addEventListener("click", toggleNav);
+ // close the navMenu by clicking outside
+ menuOverlay.addEventListener("click", toggleNav);
+
+ function toggleNav() {
+     navMenu.classList.toggle("open");
+     menuOverlay.classList.toggle("active");
+     document.body.classList.toggle("hidden-scrolling");
+ }
+
+ navMenu.addEventListener("click", (event) =>{
+     if(event.target.hasAttribute("data-toggle") && 
+         window.innerWidth <= mediaSize){
+         // prevent default anchor click behavior
+         event.preventDefault();
+         const menuItemHasChildren = event.target.parentElement;
+       // if menuItemHasChildren is already expanded, collapse it
+       if(menuItemHasChildren.classList.contains("active")){
+           collapseSubMenu();
+       }
+       else{
+         // collapse existing expanded menuItemHasChildren
+         if(navMenu.querySelector(".menu-item-has-children.active")){
+           collapseSubMenu();
+         }
+         // expand new menuItemHasChildren
+         menuItemHasChildren.classList.add("active");
+         const subMenu = menuItemHasChildren.querySelector(".sub-menu");
+         subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+       }
+     }
+ });
+ function collapseSubMenu(){
+     navMenu.querySelector(".menu-item-has-children.active .sub-menu")
+     .removeAttribute("style");
+     navMenu.querySelector(".menu-item-has-children.active")
+     .classList.remove("active");
+ }
+ function resizeFix(){
+      // if navMenu is open ,close it
+      if(navMenu.classList.contains("open")){
+          toggleNav();
+      }
+      // if menuItemHasChildren is expanded , collapse it
+      if(navMenu.querySelector(".menu-item-has-children.active")){
+           collapseSubMenu();
+    }
+ }
+
+ window.addEventListener("resize", function(){
+    if(this.innerWidth > mediaSize){
+        resizeFix();
+    }
+ });
+
+})();
+
+     </script>
+
+    <script>
+const btns = document.querySelectorAll(".btn");
+const storeProducts = document.querySelectorAll(".store-product");
+
+const search = document.getElementById("search");
+const productName = document.querySelectorAll(".product-details h2");
+const noResult = document.querySelector(".no-result");
+
+search.addEventListener("keyup", filterProducts);
+
+function filterProducts(e) {
+  const text = e.target.value.toLowerCase();
+
+  productName.forEach((product) => {
+    const item = product.textContent;
+
+    if (item.toLowerCase().indexOf(text) != -1) {
+      product.parentElement.parentElement.style.display = "block";
+      noResult.style.display = "none";
+    } else {
+      product.parentElement.parentElement.style.display = "none";
+      noResult.style.display = "block";
+    }
+  });
+}
+    </script>
+    <script>
+const audio = new Audio();
+audio.src = "short-success-sound-glockenspiel-treasure-video-game-6346.mp3";
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+<script>
+  // Инициализация маски для поля ввода номера телефона
+  $(document).ready(function() {
+    $('input[type="tel"]').inputmask();
+  });
+</script>
+
+<!-- Модальное окно -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal-content" onclick="event.stopPropagation()">
+    <h2>Your Cart</h2>
+    <div class="cartItems" id="cartItems">Your Cart is Empty</div> <!-- Элемент для отображения списка товаров -->
+    <form class="modal-form">
+      <input type="text" id="nameInput" placeholder="Your Name">
+      <span id="nameError" class="input-error">Please enter your name.</span>
+      <p><input type="tel" id="phoneInput" placeholder="Your Phone" data-inputmask="'mask': '+7-999-999-99-99'"></p>
+      <span id="phoneError" class="input-error">Please enter a valid phone number.</span>
+      <button type="button" style="background-color: red; border-radius: 10%;" onclick="closeModal(event)">Close</button>
+      <button type="button" style="background-color: rgb(16, 207, 255); border-radius: 10%;" onclick="dropCart(event)">Drop Cart</button>
+      <button type="button" style="background-color: green; border-radius: 10%;" onclick="sendOffer(event)">Offer</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
