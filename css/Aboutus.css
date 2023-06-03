@@ -355,6 +355,66 @@ a{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     transform: translate(-50%);
 }
+.container-fluid {
+	margin-top: 50px;
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#quotation {
+  font-size: 20px;
+  line-height: 1.2;
+  hanging-punctuation: first;
+}
+
+#source {
+	font-family: 'Great Vibes';
+	font-weight: 900;
+  font-size: 24px;
+  text-indent: 4vmin;
+  color: rgba(0,0,0,0.6);
+}
+
+.esfp {
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #6a0c73;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+  }
+
+  .esfp:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+/* Responsive Styles */
+
+@media (max-width: 767px) {
+  /* Styles for phones */
+  .container-fluid {
+    width: 90%; /* Adjust the width as per your requirements */
+    font-size: 16px; /* Adjust the font size as per your requirements */
+    min-height: 20vh; /* Adjust the min height as per your requirements */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for tablets */
+  .container-fluid {
+    width: 70%; /* Adjust the width as per your requirements */
+    font-size: 18px; /* Adjust the font size as per your requirements */
+    min-height: 25vh; /* Adjust the min height as per your requirements */
+  }
+}
 
 .content {
     position: absolute;
@@ -363,7 +423,7 @@ a{
     text-align: center;
     color: white;
     transform: translate(-50%);
-	font-size: 30px;
+	font-size: 20px;
 }
 .about .row {
 	display: grid;
@@ -499,7 +559,7 @@ a{
 	background-color: #f60fe7;
 }
 .det-box {
-	background-color: #081825;
+	background-color: #250823;
 	width: 400px;
 	height: 300px;
 	position: relative;
@@ -537,7 +597,7 @@ a{
 	padding-top: 30px;
 }
 .comment-sym svg {
-	fill: #82E7E3;
+	fill: #ec9cf2;
 }
 .comment-det {
 	font-size: 17px;
@@ -559,11 +619,13 @@ a{
 footer {
     position: static;
     bottom: 0;
+	font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-height:800px) {
     footer {
         position: static;
+		font-family: 'Montserrat', sans-serif;
     }
     header {
         padding-top: 40px;
