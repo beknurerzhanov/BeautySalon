@@ -303,6 +303,11 @@
                 this.pause();
             })
         });
+        $(".video-card-title").each(function(){
+            if($(this).text().length > 50){
+                $(this).html($(this).text().substring(0, 75) + "...")
+            }
+        })
      </script>
      <script>
   
