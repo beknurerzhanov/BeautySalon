@@ -1,3 +1,6 @@
+function playAudio(){
+  document.getElementById("audio").play();
+}
 const Questions = [
     {
       question: "Where is our salon?",
@@ -105,7 +108,6 @@ const Questions = [
     }
   }
   function endGame() {
-    // Calculate score and display end game message
     const gameElement = document.getElementById("game");
     const scoreElement = document.createElement("p");
     let discount = 0;
@@ -117,13 +119,13 @@ const Questions = [
     } else if (score >= 0 && score <= 3) {
       discount = 5;
     }
-  
+    playAudio();
     scoreElement.textContent = `Congratulations! You scored ${score} out of ${Questions.length}. You get ${discount}% off at our Beine salon.`;
   
     gameElement.innerHTML = "<center><h1>Game over!</h1></center>";
     gameElement.appendChild(scoreElement);
   
-  
+    
     confirm("If you want to exit press e ")
     document.addEventListener('keydown', handleKeyPress);
   }
