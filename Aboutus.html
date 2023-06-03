@@ -57,7 +57,7 @@
                    <li class="menu-item menu-item-has-children">
                     <a href="Services.html">Services<i class="plus"></i></a>
                     <ul class="sub-menu">
-                      <li class="menu-item"><a href="">Service types</a></li>
+                      <li class="menu-item"><a href="Servicetypes.html">Service types</a></li>
                     </ul>
                  </li>
                    <li class="menu-item">
@@ -86,7 +86,7 @@
       <div class="row container">
         <div class="col">
           <div class="title">
-            <h1>About Us</h1>
+            <h1>Beine Salon</h1>
           </div>
           <p>
             Our team of experienced and highly skilled professionals is dedicated to providing you with the highest quality of beauty services, customized to your unique needs and preferences.
@@ -105,10 +105,18 @@
                 <img src="img\photo1684691924.jpeg" alt="" />
               </div>
             </div>
-        
         </div>
       </div>
     </section>
+    <div class="container-fluid">
+      <blockquote>
+        <p id="quotation"></p>
+        <footer>
+          <p id="source"></p>
+        </footer>
+      </blockquote>
+      <button class="esfp">Generate Quote</button>
+    </div>
     <div class="splide">
       <div class="splide__track">
         <ul class="splide__list">
@@ -128,7 +136,7 @@
               <div class="comment-sym"><svg xmlns="http://www.w3.org/2000/svg" height="65px" viewBox="0 0 22 22" width="65px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM20 4v13.17L18.83 16H4V4h16zM6 12h12v2H6zm0-3h12v2H6zm0-3h12v2H6z"/></svg></div>
               <div class="comment-det">Beauty salon is amazing! The staff is friendly and knowledgeable, and they really know how to make you feel pampered.</div>
               <duv class="info">
-                <img src="img\makeupp2.jpg" alt="">
+                <img src="img\makeup1.jpg" alt="">
                 <div class="name">Eva Grouse</div>
                 <div class="comp">Beine Salon</div>
               </duv>
@@ -333,6 +341,53 @@
 		});
 		splide.mount();
 	});
+    </script>
+
+    <script>
+      const quotes = [
+	{ 
+		"quote" : "“Everything has beauty, but not everyone sees it.”", 
+		"source" : "Confucius" 
+	},
+	{
+		"quote" : "Since love grows within you, so beauty grows. For love is the beauty of the soul.", 
+		"source" : "Saint Augustine"
+	},
+	{
+		"quote" : "I don't think of all the misery but of the beauty that still remains.", 
+		"source" : "Anne Frank"
+	},
+	{
+		"quote" : "Great minds discuss ideas; average minds discuss events; small minds discuss people", 
+		"source" : "Eleanor Roosevelt"
+	},
+	{
+		"quote" : "It is not sufficient to see and to know the beauty of a work. We must feel and be affected by it.", 
+		"source" : "Voltaire"
+	},
+	{
+		"quote" : "A girl should be two things: classy and fabulous.", 
+		"source" : "Coco Chanel"
+	},
+	{
+		"quote" : "All little girls should be told they are pretty, even if they aren't", 
+		"source" : "Marilyn Monroe"
+	},
+	{
+		"quote" : "The best and most beautiful things in the world cannot be seen or even touched – they must be felt with the heart", 
+		"source" : "Helen Keller"
+	}
+]
+
+function randomQuote() {
+  let random = quotes[Math.floor(Math.random() * quotes.length)];
+  quotation.innerText = `“${random.quote}.”`;
+  source.innerText = random.source;
+}
+
+randomQuote();
+
+document.querySelector(".esfp").addEventListener('click', randomQuote)
     </script>
 </body>
 </html>
