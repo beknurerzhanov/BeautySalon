@@ -368,6 +368,9 @@ a{
     line-height: 2;
     color: var(--color-primary);
   }
+  .search-box{
+    margin-top: 40px;
+  }
   
   form input {
     width: 20rem;
@@ -394,8 +397,9 @@ a{
   }
   
   #store-products {
+    margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     grid-gap: 2rem;
     padding: 2rem 0;
   }
