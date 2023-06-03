@@ -43,7 +43,7 @@
                    <li class="menu-item menu-item-has-children">
                     <a href="Services.html">Services<i class="plus"></i></a>
                     <ul class="sub-menu">
-                        <li class="menu-item"><a href="">Service types</a></li>
+                        <li class="menu-item"><a href="Servicetypes.html">Service types</a></li>
                     </ul>
                  </li>
                    <li class="menu-item">
@@ -221,9 +221,13 @@
 
 <script>
 let list = document.querySelectorAll('.nav-link');
-        let itemBox = document.querySelectorAll('.itemBox');
-        function playSound() {  let audio = new Audio("mp3/short-success-sound-glockenspiel-treasure-video-game-6346.mp3"); 
-          audio.play();
+let itemBox = document.querySelectorAll('.itemBox');
+
+function playSound() {
+  let sounds = ['mp3/short-success-sound-glockenspiel-treasure-video-game-6346.mp3', 'mp3/button2.mp3', 'mp3/button3.mp3']; 
+  let randomIndex = Math.floor(Math.random() * sounds.length); 
+  let audio = new Audio(sounds[randomIndex]);
+  audio.play();
 }
 
         for (let i = 0; i < list.length; i++) {
