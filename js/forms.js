@@ -127,18 +127,19 @@ const Questions = [
   
     
     confirm("If you want to exit press e ")
-    document.addEventListener('keydown', handleKeyPress);
+    
+document.addEventListener('keydown', handleKeyPress);
+}
+
+function handleKeyPress(event) {
+  const keyName = event.key;
+
+  if (keyName.toLowerCase() === 'e') {
+    
+      window.close();
+    
   }
-  
-  function handleKeyPress(event) {
-    const keyName = event.key;
-  
-    if (keyName.toLowerCase() === 'e') {
-      
-        window.close();
-      
-    }
-  }
-  
-  displayQuestion();
+}
+
+displayQuestion();
   
