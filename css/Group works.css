@@ -326,7 +326,7 @@ a{
 	}
 }
 .jj{
-    height: 400px;
+  
     display: flex;
   align-items: center;
   min-height: 100vh;
@@ -336,6 +336,7 @@ a{
 .wrapper {
     margin-top: -20px;
     width: 100%;
+    height: 400px;
     background-color: #702165;
   }
   
@@ -387,13 +388,13 @@ a{
     cursor: pointer;
     outline: none;
     margin: 0 5px;
-    border: 2px solid #fff !important;
+    border: 2px solid #3d0826 !important;
     transition: all 0.3s ease;
   }
   
   .owl-dot:hover,
   .owl-dot.active {
-    background-color: #fff !important;
+    background-color: #5b1547 !important;
   }
   
   .owl-prev,
@@ -413,21 +414,25 @@ a{
   
   .fa-chevron-left,
   .fa-chevron-right {
-    font-size: 30px;
-    color: #fff;
+    font-size: 20px;
+    color: #3d0826;
     transition: all 0.2s;
   }
   
   .fa-chevron-left:hover,
   .fa-chevron-right:hover {
-    color: #777;
+    color: #5b1547;
   }
- 
+ .content{
+    height: 300px;
+ }
 .content p{
     color: #fff;
+    height: 300px;
 }
 .title{
     color: #fff;
+
 }
 footer {
     position: relative;
