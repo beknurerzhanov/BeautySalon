@@ -8,7 +8,7 @@ body{
 	line-height: 1.5;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
-	background-color: #fde9f8;
+	background-color: #a84298;
 }
 body.hidden-scrolling{
 	overflow-y: hidden;
@@ -336,7 +336,7 @@ a{
 .wrapper {
     margin-top: -20px;
     width: 100%;
-    background-color: #6a0c73;
+    background-color: #a84298;
   }
   
   .wrapper .carousel {
